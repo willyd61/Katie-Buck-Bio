@@ -1,0 +1,16 @@
+# Build output from the Pages workflow
+_site/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
