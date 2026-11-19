@@ -89,13 +89,13 @@ This repository is public.
 
 - The page and this README publish Carolina Beach, NC, the email address Ktvbuck12@gmail.com, and LinkedIn at https://www.linkedin.com/in/katie-victoria-buck.
 - The resume has no street address. None is published here.
-- The downloadable resume files include a telephone number from the source document. That number is omitted from the website and from this README on purpose. The files are in the repository because a public resume download was requested. If the telephone number should not be public, remove `assets/Katie-Buck-Resume.docx` and `assets/Katie-Buck-Resume.pdf`, and remove the download links, before relying on the public site.
+- The downloadable resume files do not include a telephone number. None is published on the page or in this README.
 
 ## Resume files
 
-`assets/Katie-Buck-Resume.docx` is the original Word resume.
+`assets/Katie-Buck-Resume.docx` is the Word resume with the telephone number removed from the contact line. The email address and LinkedIn hyperlink are unchanged.
 
-`assets/Katie-Buck-Resume.pdf` is a one-page export from LibreOffice Writer 24.2. The Word file uses Garamond, which was not installed in the conversion environment. The export embeds EB Garamond under the family name Garamond so the PDF stays on one page, matching the Word page count. The wording matches the Word file, including the telephone number and the email and LinkedIn hyperlinks. Glyph shapes are EB Garamond rather than Microsoft Garamond.
+`assets/Katie-Buck-Resume.pdf` is a one-page export of that file from LibreOffice Writer 24.2. The Word file uses Garamond, which was not installed in the conversion environment. The export embeds EB Garamond under the family name Garamond so the PDF stays on one page. The wording matches the Word file, including the email and LinkedIn hyperlinks. Glyph shapes are EB Garamond rather than Microsoft Garamond.
 
 The visible resume text says “linkedin” only. The URL was stored as a hyperlink in the document and was confirmed as https://www.linkedin.com/in/katie-victoria-buck.
 
