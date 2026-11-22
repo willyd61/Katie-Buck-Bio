@@ -2,9 +2,15 @@
 
 Professional bio and hero page for Katie Buck, a Clinical Research Specialist based in Carolina Beach, NC. The page is a static site for the clinical research and CRO audience. Wording for skills, experience, certifications, education, and affiliations is taken from her resume. Nothing on the page adds employers, dates, metrics, certifications, or testimonials that the resume does not contain.
 
-**Live site:** https://willyd61.github.io/Katie-Buck-Bio/
+**Owner:** [Katie Buck](https://github.com/katievbuck) (`katievbuck`)
 
-The live URL works after GitHub Pages is set to build from GitHub Actions and the workflow on `main` has succeeded. See [Deploy](#deploy).
+**Repository:** https://github.com/katievbuck/Katie-Buck-Bio
+
+**Live site:** https://katievbuck.github.io/Katie-Buck-Bio/
+
+The live URL works after the repository transfer is accepted, GitHub Pages is set to build from GitHub Actions, and the workflow on `main` has succeeded. See [Deploy](#deploy).
+
+A plain-language walkthrough for accepting the transfer and updating the site is in [docs/USER-GUIDE.md](docs/USER-GUIDE.md).
 
 ## Purpose
 
@@ -13,7 +19,7 @@ Give recruiters, study teams, and collaborators a fast, readable public profile 
 - Areas of focus, including site activation, study startup, eTMF, ICH-GCP, and regulatory submissions
 - Professional experience at Syneos Health (Site Activation Specialist I, September 2025 – August 2026) and IQVIA (Clinical Trials Assistant Intern, August 2024 – September 2025)
 - Education, certifications, and the UNCW Student Association for Clinical Research (SACR) affiliation
-- Contact by email and LinkedIn, plus the resume as a Word file and a PDF export
+- Contact by email, LinkedIn, and GitHub, plus the resume as a Word file and a PDF export
 
 ## Repository structure
 
@@ -27,6 +33,7 @@ Give recruiters, study teams, and collaborators a fast, readable public profile 
 │   ├── favicon-32.png
 │   └── og-image.png              # Social card (text only, no portrait)
 ├── css/styles.css
+├── docs/USER-GUIDE.md            # Owner guide for Katie
 ├── favicon.svg
 ├── index.html
 ├── robots.txt
@@ -47,22 +54,23 @@ python3 -m http.server 8080
 
 Open http://127.0.0.1:8080/
 
-Paths are relative, so the same files work at the project URL `https://willyd61.github.io/Katie-Buck-Bio/`.
+Paths are relative, so the same files work at the project URL `https://katievbuck.github.io/Katie-Buck-Bio/`.
 
 ## Deploy
 
-Hosting matches [willyd61/willyd61.github.io](https://github.com/willyd61/willyd61.github.io): GitHub Pages with `build_type` workflow, not a branch deploy.
+GitHub Pages publishes this site from the workflow in `.github/workflows/pages.yml` (a GitHub Actions source, not a branch deploy).
 
-`.github/workflows/pages.yml` runs on every push to `main` and from **Actions → Deploy Katie Buck bio to GitHub Pages → Run workflow**. Permissions are limited to `contents: read`, `pages: write`, and `id-token: write`. The workflow uses `actions/configure-pages`, `actions/upload-pages-artifact`, and `actions/deploy-pages`.
+That workflow runs on every push to `main` and from **Actions → Deploy Katie Buck bio to GitHub Pages → Run workflow**. Permissions are limited to `contents: read`, `pages: write`, and `id-token: write`. The workflow uses `actions/configure-pages`, `actions/upload-pages-artifact`, and `actions/deploy-pages`.
 
-These repository settings are outside the code and still have to be set in GitHub:
+These repository settings are outside the code and still have to be set in GitHub after the transfer:
 
 1. **Settings → Pages → Build and deployment → Source: GitHub Actions.**
-2. **Description.** The repository description is still the stub text. A fitting description is `Professional bio for Katie Buck, Clinical Research Specialist.`
-3. **Topics.** None are set. Useful topics: `clinical-research`, `github-pages`, `biography`.
-4. **Website / homepage:** `https://willyd61.github.io/Katie-Buck-Bio/`
+2. **Settings → Pages → Enforce HTTPS.**
+3. **Description.** A fitting description is `Professional bio for Katie Buck, Clinical Research Specialist.`
+4. **Topics.** Useful topics: `clinical-research`, `github-pages`, `biography`.
+5. **Website / homepage:** `https://katievbuck.github.io/Katie-Buck-Bio/`
 
-Until the Pages source is GitHub Actions, pushes will not publish the site.
+Until the Pages source is GitHub Actions, pushes will not publish the site. The step-by-step checklist is in [docs/USER-GUIDE.md](docs/USER-GUIDE.md).
 
 ## Accessibility
 
@@ -79,7 +87,7 @@ The page targets WCAG 2.1 AA:
 
 - Unique title, meta description, canonical URL, and `lang="en"`
 - Open Graph `profile` tags and a Twitter large-image card
-- JSON-LD `Person` schema, including `sameAs` for LinkedIn: https://www.linkedin.com/in/katie-victoria-buck
+- JSON-LD `Person` schema, including `sameAs` for LinkedIn (https://www.linkedin.com/in/katie-victoria-buck) and GitHub (https://github.com/katievbuck)
 - `favicon.svg`, a PNG favicon, `robots.txt`, and `sitemap.xml`
 - The social image is a text card. The resume has no portrait, so the page does not use one
 
@@ -87,7 +95,7 @@ The page targets WCAG 2.1 AA:
 
 This repository is public.
 
-- The page and this README publish Carolina Beach, NC, the email address Ktvbuck12@gmail.com, and LinkedIn at https://www.linkedin.com/in/katie-victoria-buck.
+- The page and this README publish Carolina Beach, NC, the email address Ktvbuck12@gmail.com, LinkedIn at https://www.linkedin.com/in/katie-victoria-buck, and GitHub at https://github.com/katievbuck.
 - The resume has no street address. None is published here.
 - The downloadable resume files do not include a telephone number. None is published on the page or in this README.
 
@@ -115,13 +123,13 @@ The page leaves these out rather than filling them in:
 ## Credits
 
 - Biographical content and resume: Katie Buck
-- Site published from this repository by [willyd61](https://github.com/willyd61)
+- Repository owner: [Katie Buck](https://github.com/katievbuck)
+- Site code originally published by [willyd61](https://github.com/willyd61)
 - Hosting: GitHub Pages
 - PDF export: LibreOffice Writer
-- Pages workflow pattern: [willyd61/willyd61.github.io](https://github.com/willyd61/willyd61.github.io)
 
 ## License
 
 Site code (HTML, CSS, page images, and workflow configuration) is under the [MIT License](LICENSE). Copyright (c) 2026 willyd61.
 
-The resume files and the biographical content on the site are © Katie Buck, all rights reserved. They are not covered by the MIT License.
+The repository owner is Katie Buck (`katievbuck`). The resume files and the biographical content on the site are © Katie Buck, all rights reserved. They are not covered by the MIT License.

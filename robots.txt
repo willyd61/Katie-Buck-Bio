@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://willyd61.github.io/Katie-Buck-Bio/sitemap.xml
+Sitemap: https://katievbuck.github.io/Katie-Buck-Bio/sitemap.xml
